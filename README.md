@@ -23,11 +23,15 @@ The project is created with Maven, so you just need to import it to your IDE and
 # Database Configuration
 
 Create a MySQL database with the name springbootdb and add the credentials to /resources/application.properties.
+
 The default ones are :
 
 spring.datasource.url=jdbc:mysql://localhost:3306/studentdb
+
 spring.datasource.username=root
+
 spring.datasource.password=admin
+
 spring.jpa.hibernate.ddl-auto=update
 
 # Usage
