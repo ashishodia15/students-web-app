@@ -1,4 +1,20 @@
---Table Creation Script
+#User Creation Script
+#CREATE USER 'somil-spring-user'@'localhost' IDENTIFIED BY 'somil-spring-pass';
+#GRANT ALL PRIVILEGES ON *.* TO 'somil-spring-user'@'localhost';
+
+#Login with Username
+#mysql -u spring-user -p spring-pass
+
+#Drop Schema if exists
+DROP DATABASE studentdb;
+
+#Database Creation Script
+CREATE DATABASE studentdb;
+
+#Use Database
+USE studentdb;
+
+#Table Creation Script
 CREATE TABLE IF NOT EXISTS STUDENT (
    STUDENT_ID INT AUTO_INCREMENT,
     FIRST_NAME VARCHAR(50) NOT NULL,
@@ -11,7 +27,7 @@ PHONE_NUMBER VARCHAR(15) NOT NULL,
     PRIMARY KEY (STUDENT_ID)
 )  ENGINE=INNODB;
 
---Data Insert Statements for Table STUDENT
+#Data Insert Statements for Table STUDENT
 
 INSERT INTO STUDENT (FIRST_NAME, MIDDLE_NAME, LAST_NAME, REG_NUMBER, AGE, EMAIL_ID, PHONE_NUMBER) VALUES ("John","Will","Smith",1001,16,"johnsmith@gmail.com","+15127759734"),
  ("Daniel","Steve","Lee",1002,17,"daniel@gmail.com","+15127759744"),

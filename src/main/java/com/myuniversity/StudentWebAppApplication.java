@@ -2,14 +2,19 @@ package com.myuniversity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class StudentWebAppApplication {
+public class StudentWebAppApplication extends SpringBootServletInitializer{
 
 	public static void main(String[] args) {
-		System.out.println("I am in Web Application");
 		SpringApplication.run(StudentWebAppApplication.class, args);
-		System.out.println("I am out of Web Application");
 	}
+	
+	@Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(SpringApplicationBuilder.class);
+    }
 
 }
