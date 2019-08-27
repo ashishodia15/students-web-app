@@ -18,7 +18,7 @@ This project is based on the Spring Boot project and uses these packages :
 - Sweet Alert
 
 # Demo
-![demo](https://gph.is/g/ZxPDGMP)
+![demo](https://media.giphy.com/media/QTyN7s8TYl3E2CWMwI/giphy.gif)
 
 # Installation
 The project is created with Maven, so you just need to import it to your IDE and build the project to resolve the dependencies
